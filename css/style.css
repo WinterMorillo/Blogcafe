@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka:wght@400;500&family=Montserrat:wght@300;400;700&family=Open+Sans&family=PT+Sans:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@300;500;700&family=Staatliches&family=Ubuntu:wght@700&display=swap');
+
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */  
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*Globales*/
+
+h1{
+    font-size: 4rem;
+    font-family: var(--fuenteHeading);
+}
+
+h2{
+    font-size: 3rem;
+    font-family: var(--fuenteHeading);
+}
+
+h3{
+    font-size: 2.5rem;
+    font-family: var(--fuenteHeading);
+}
+
+p{
+    font-size: 2rem;
+    font-family: var(--fuenteParrafos);
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.contenedor{
+    max-width: 120rem;    
+    margin: 0 auto;
+}
+
+
+/*Header section*/
+.header{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 50rem;
+    color: var(--blanco);  
+    width: 100%;  
+}
+
+.header__navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion__logo{
+    
+}
+
+.navegacion__titulo{
+    font-weight: 400;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.navegacion__titulo span{
+    font-weight: bold;
+}
+
+.navegacion__enlaces{
+
+}
+
+.navegacion__enlace{
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.header__titulo{
+    margin-top: 10rem;
+}
+
+.header__link{
+    text-decoration: none;
+}
+
+.header__texto{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.descripcion__detalle{
+    text-align: center;
+}
+
+/*Main section*/
+
+.blog{
+    padding: 2rem 10rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.principal__imagen{
+    width: 95%;
+}
+
+.principal_primera{
+    margin-bottom: 5rem;
+}
+.principal_primera, .cursos__talleres{
+    border-bottom: 1px solid var(--gris);
+}
+
+.principal_primera:last-of-type,  .cursos__talleres:last-of-type{
+    border: none;
+}
+
+.principal__boton, .secundario__boton{
+    text-decoration: none;
+    padding: 2rem 3rem;
+    display: inline-block;
+    margin: 2rem 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.principal__boton{
+    background-color: var(--negro);
+}
+
+.secundario__boton{
+    background-color: var(--primario);
+}
+
+
+
+
+
+.footer{
+    background-color: var(--negro);
+    color: white;
+    padding: 2rem 4rem;
+}
+
+.curso__precio, .curso__cupo{
+    font-weight: bold;
+    font-family: var(--fuenteHeading);
+}
+
+.curso_precio--gratis, .curso__cupo--20{
+    font-weight: normal;
+}
+
+.nosotros{
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+.nosotros__titulo{
+    text-align: center;
+}
+
+.nosotros__contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.nosotros__imagen{
+    width: 100%;
+}
+
+.nosotros__texto{
+    margin: 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.cursos__taller{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.curso__titulo{
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+
+.curso__contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;  
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 5rem; 
+    padding: 0 0 3rem 0 ;
+
+}
+
+.cursos__titulo{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.curso__contenedor:last-of-type{
+    border: none;
+}
+
+.curso__imagen{
+    width: 40rem;
+}
+
+.curso__detalle{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.imagen__contacto{
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+}
+
+.contacto{
+    max-width: 120rem;
+    margin: 0 auto 10rem auto;
+}
+
+.contacto__titulo{
+    text-align: center;
+}
+
+.contacto__formulario{
+    height: 40rem;
+    background-color: var(--blanco);
+    padding: 3rem;
+    width: 80%;
+    margin: -5rem auto 0 auto;
+    font-family: var(--fuenteParrafos);
+    
+}
+
+.contacto__label{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.formulario__label{
+    font-size: 2rem;
+    flex: 0 0 9rem;
+}
+
+.formulario__input{
+    flex: 1;
+    height: 4rem;
+    border: 1px solid var(--gris);
+}
+
+textarea{
+    height: 20rem;    
+    width: 100%;
+    border: 1px solid var(--gris);
+}
+
+
+
+
